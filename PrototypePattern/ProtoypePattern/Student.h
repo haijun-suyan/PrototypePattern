@@ -1,4 +1,4 @@
-//
+//  某个特定对象类
 //  Student.h
 //  ProtoypePattern
 //

@@ -1,4 +1,4 @@
-//
+//  某个特定对象类
 //  ClassModel.h
 //  ProtoypePattern
 //
