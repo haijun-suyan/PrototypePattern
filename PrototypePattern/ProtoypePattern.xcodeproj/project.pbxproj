@@ -19,6 +19,7 @@
 		76716DE51E6311AC00CF6554 /* BaseCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76716DE41E6311AC00CF6554 /* BaseCopyObject.m */; };
 		76716DF11E6314EC00CF6554 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 76716DF01E6314EC00CF6554 /* Student.m */; };
 		76716DFA1E6315A100CF6554 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76716DF91E6315A100CF6554 /* ClassModel.m */; };
+		F34E86FB25B07E6900D489EC /* BaseCustomCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F34E86FA25B07E6900D489EC /* BaseCustomCopyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		76716DF01E6314EC00CF6554 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		76716DF81E6315A100CF6554 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
 		76716DF91E6315A100CF6554 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
+		F34E86F925B07E6900D489EC /* BaseCustomCopyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCustomCopyObject.h; sourceTree = "<group>"; };
+		F34E86FA25B07E6900D489EC /* BaseCustomCopyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCustomCopyObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 			children = (
 				76716DDD1E630F7900CF6554 /* StudentModel.h */,
 				76716DDE1E630F7900CF6554 /* StudentModel.m */,
+				F34E86F925B07E6900D489EC /* BaseCustomCopyObject.h */,
+				F34E86FA25B07E6900D489EC /* BaseCustomCopyObject.m */,
 				76716DE01E630FF200CF6554 /* ProtoypeCopyProtocol.h */,
 			);
 			name = ProtoypeCopy;
@@ -264,6 +269,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76716DE51E6311AC00CF6554 /* BaseCopyObject.m in Sources */,
+				F34E86FB25B07E6900D489EC /* BaseCustomCopyObject.m in Sources */,
 				76716DB21E630EFF00CF6554 /* ViewController.m in Sources */,
 				76716DDF1E630F7900CF6554 /* StudentModel.m in Sources */,
 				76716DAF1E630EFF00CF6554 /* AppDelegate.m in Sources */,
@@ -547,6 +554,7 @@
 				76716DD61E630EFF00CF6554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76716DD71E630EFF00CF6554 /* Build configuration list for PBXNativeTarget "ProtoypePatternTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +563,7 @@
 				76716DD91E630EFF00CF6554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76716DDA1E630EFF00CF6554 /* Build configuration list for PBXNativeTarget "ProtoypePatternUITests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +572,7 @@
 				76716DDC1E630EFF00CF6554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,8 +17,8 @@
     //self：类外调用alloc指令所开辟的对象
     object.className = self.className;
     //完成了深拷贝(完整的复制了集合里面的对象)
-    //copyItems：xxx.copy
-//    object.students = [[NSArray alloc] initWithArray:self.students copyItems:YES];
+    //copyItems：xxx.copy(数组容器聚合体中2个元素项目的copy)
+    object.students = [[NSArray alloc] initWithArray:self.students copyItems:YES];
 }
 
 @end

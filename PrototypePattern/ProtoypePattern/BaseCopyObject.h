@@ -1,7 +1,7 @@
-//  Copy辅助类
+//  Copy辅助基类
 //  BaseCopyObject.h
 //  ProtoypePattern
-//
+//  原型NSCopying系统拷贝协议
 //  Created by haijunyan on 2019/2/27.
 //  Copyright © 2019年 haijunyan. All rights reserved.
 //
