@@ -3,7 +3,7 @@
 //  ProtoypePattern
 //
 //  Created by haijunyan on 2021/1/14.
-//  Copyright © 2021 wupeng. All rights reserved.
+//  Copyright © 2021 haijunyan. All rights reserved.
 //
 
 #import "BaseCustomCopyObject.h"

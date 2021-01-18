@@ -45,13 +45,10 @@
     Student *stu1 = [[Student alloc] init];
     stu1.name          = @"小明";
 
-
     //副本(Copy)stu2内存
     //Copy事件的内部存在指令调用copyWithZone事件(通过遵循NSCopying协议的当前地址指针访问当前地址域内的 协议事件copyWithZone)
     //xxx.copy带有有效信息的已复制对象内存
     Student *stu2 = stu1.copy;//stu1：Student
-
-
 
     ClassModel *class1 = [[ClassModel alloc] init];
     class1.className   = @"班级1";
