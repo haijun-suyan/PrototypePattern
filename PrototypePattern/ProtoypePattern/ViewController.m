@@ -12,7 +12,12 @@
 #import "Student.h"
 
 @interface ViewController ()
+@property (nonatomic, strong) NSString *strongString;
+@property (nonatomic, copy) NSString *copiedString;
 
+
+@property (nonatomic, strong) NSMutableString *strongMutableString;
+@property (nonatomic, copy) NSMutableString *copiedMutableString;
 @end
 
 @implementation ViewController
@@ -25,6 +30,7 @@
 }
 
 //为了方便演示，代码中有两个student的model
+//遵循<NSObject>对象协议(常规读写)
 - (void)testProtoypeCopyProtocol {
     // 学生1
     StudentModel *stu1 = [[StudentModel alloc] init];
@@ -40,6 +46,7 @@
 
 }
 
+//遵循NSCopying拷贝协议
 - (void)testNSCopying {
     Student *stu1 = [[Student alloc] init];
     stu1.name          = @"小明";
