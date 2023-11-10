@@ -24,8 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self testProtoypeCopyProtocol];
-    [self testNSCopying];
+//    [self testProtoypeCopyProtocol];
+//    [self testNSCopying];
+    [self ssssss];
     
 }
 
@@ -62,6 +63,30 @@
     
     NSLog(@"%@", class1.students);
     NSLog(@"%@", class2.students);
+}
+
+- (void)ssssss {
+//    NSString *string = [NSString stringWithFormat:@"hello string, hello world!"];
+//     self.strongString = string;
+//     self.copiedString = string;
+//     NSLog(@"%p %@", string,string);
+//     NSLog(@"%p %@", self.strongString,self.strongString);
+//     NSLog(@"%p %@", self.copiedString,self.copiedString);
+    //具体赋予(浅)
+    NSMutableString *mutableString = [[NSMutableString alloc] initWithFormat:@"hello mutableString, hello world!"];
+    //成员赋予
+    self.strongMutableString = mutableString;
+
+    self.copiedMutableString = mutableString;//深层次(独立内存不受影响)
+
+    NSLog(@"%p %@", mutableString,mutableString);
+    NSLog(@"%p %@", self.strongMutableString,self.strongMutableString);
+    NSLog(@"%p %@", self.copiedMutableString,self.copiedMutableString);
+
+    [mutableString replaceOccurrencesOfString:@", hello world!" withString:@"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, mutableString.length)];
+    NSLog(@"%p %@", mutableString,mutableString);
+    NSLog(@"%p %@", self.strongMutableString,self.strongMutableString);
+    NSLog(@"%p %@", self.copiedMutableString,self.copiedMutableString);
 }
 
 
